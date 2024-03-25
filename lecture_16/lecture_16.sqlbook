@@ -139,6 +139,10 @@ WHERE nationality = 'United States';
 SELECT * FROM drivers
 WHERE (driver_id = 2);
 
+-- Evaluate OR conditions
+SELECT * FROM drivers
+WHERE (nationality = 'Colombian') OR (nationality = 'German')
+
 -- SQLBook: Markup
 <font size="5"> 
 
@@ -186,6 +190,9 @@ Try it yourself!
 
 - Select "nationality" and "driver_id" for drivers <br>
 with more than 60 victories
+-- SQLBook: Code
+SELECT nationality, driver_id FROM drivers 
+WHERE victories > 60
 -- SQLBook: Code
 -- Write your own code!
 SELECT driver_name, nationality, driver_id, victories FROM drivers;
